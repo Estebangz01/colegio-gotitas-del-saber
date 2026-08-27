@@ -1,0 +1,52 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+/*
+ * Diseño Futurista - Fondo Marino y Botón de Cristal Verde
+ */
+
+.mainFxmlClass {
+    /* Fondo azul marino futurista usando un degradado oscuro */
+    -fx-background-color: linear-gradient(to bottom right, #050b14, #001f3f, #004e92);
+}
+.label{
+    -fx-text-fill: white;
+    -fx-font-weight: bold; /* Opcional: las pone en negrita para que resalten más */
+    -fx-font-size: 13px;   /* Opcional: ajusta un poco el tamaño */
+}
+.button {
+    /* Letras blancas y en negrita */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    
+    /* Efecto de cristal verde: degradado semitransparente */
+    -fx-background-color: linear-gradient(to bottom, rgba(80, 227, 194, 0.4), rgba(46, 204, 113, 0.7));
+    
+    /* Bordes redondeados para un look más moderno */
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    
+    /* Borde blanco semitransparente para simular el reflejo del cristal */
+    -fx-border-color: rgba(255, 255, 255, 0.5);
+    -fx-border-width: 1.5;
+    
+    /* Resplandor verde estilo neón/futurista alrededor del botón */
+    -fx-effect: dropshadow(three-pass-box, #2ecc71, 15, 0.3, 0, 0);
+    
+    /* Ajuste del tamaño y cursor */
+    -fx-padding: 8 25 8 25;
+    -fx-cursor: hand;
+}
+
+/* Efecto al pasar el mouse por encima del botón (brilla más y se vuelve más sólido) */
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, rgba(80, 227, 194, 0.6), rgba(46, 204, 113, 0.9));
+    -fx-border-color: rgba(255, 255, 255, 0.8);
+    -fx-effect: dropshadow(three-pass-box, #2ecc71, 25, 0.5, 0, 0);
+}
+
+.test-class {
+    /* Clase vacía por si la necesitas después */
+}
